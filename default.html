@@ -1,161 +1,39 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.14.1 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
   <head>
-    <meta charset="utf-8" />
-    <title>Journal</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <link
-      href="https://fonts.googleapis.com/css?family=Acme"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets.css" />
+    {% include head.html %}
+    {% include head/custom.html %}
   </head>
-  <body>
-    <section class="journal">
-      <h2 class="content-title">23 Jul 2018</h2>
-      <ul class="journal-list grid">
-        <li class="detail-info ">
-          <div class="content-wrap">
-            <div class="content-spot">
-              2:00 pm goladcoast..here we come dept of social services
-            </div>
-            <img
-              class="image"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdcwjqGV8td_KP4YhVfIjcXrBOAILF1ARunW-QQ-5AagjzHZIQ0w"
-              alt="christmas"
-            />
 
-            <p class="content-line">
-              Christmas is an annual festival commemorating the birth of Jesus
-              Christ,[8][9] observed primarily on December 25[4][10][11] as a
-              religious and cultural celebration among billions of people around
-              the world.[2][12][13] A feast central to the Christian liturgical
-              year, it is preceded by the season of Advent or the Nativity Fast
-              and initiates the season of Christmastide, which historically in
-              the West lasts twelve days and culminates on Twelfth Night;[14] in
-              some traditions, Christmastide includes an octave.[15] Christmas
-              Day is a public holiday in many of the world's
-              nations,[16][17][18] is celebrated religiously by a majority of
-              Christians,[19] as well as culturally by many
-              non-Christians,[1][20] and forms an integral part of the holiday
-              season centered around it.
-            </p>
-          </div>
-        </li>
-        <li class="detail-info ">
-          <div class="content-wrap">
-            <div class="content-spot">
-              2:00 pm goladcoast..here we come dept of social services
-            </div>
-            <img
-              class="image"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdcwjqGV8td_KP4YhVfIjcXrBOAILF1ARunW-QQ-5AagjzHZIQ0w"
-              alt="christmas"
-            />
+  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
 
-            <p class="content-line">
-              Christmas is an annual festival commemorating the birth of Jesus
-              Christ,[8][9] observed primarily on December 25[4][10][11] as a
-              religious and cultural celebration among billions of people around
-              the world.[2][12][13] A feast central to the Christian liturgical
-              year, it is preceded by the season of Advent or the Nativity Fast
-              and initiates the season of Christmastide, which historically in
-              the West lasts twelve days and culminates on Twelfth Night;[14] in
-              some traditions, Christmastide includes an octave.[15] Christmas
-              Day is a public holiday in many of the world's
-              nations,[16][17][18] is celebrated religiously by a majority of
-              Christians,[19] as well as culturally by many
-              non-Christians,[1][20] and forms an integral part of the holiday
-              season centered around it.
-            </p>
-          </div>
-        </li>
-        <li class="detail-info">
-          <div class="content-wrap ">
-            <div class="content-spot">
-              2:00 pm goladcoast..here we come dept of social services
-            </div>
-            <img
-              class="image"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdcwjqGV8td_KP4YhVfIjcXrBOAILF1ARunW-QQ-5AagjzHZIQ0w"
-              alt="christmas"
-            />
+    {% include_cached browser-upgrade.html %}
+    {% include_cached masthead.html %}
 
-            <p class="content-line">
-              Christmas is an annual festival commemorating the birth of Jesus
-              Christ,[8][9] observed primarily on December 25[4][10][11] as a
-              religious and cultural celebration among billions of people around
-              the world.[2][12][13] A feast central to the Christian liturgical
-              year, it is preceded by the season of Advent or the Nativity Fast
-              and initiates the season of Christmastide, which historically in
-              the West lasts twelve days and culminates on Twelfth Night;[14] in
-              some traditions, Christmastide includes an octave.[15] Christmas
-              Day is a public holiday in many of the world's
-              nations,[16][17][18] is celebrated religiously by a majority of
-              Christians,[19] as well as culturally by many
-              non-Christians,[1][20] and forms an integral part of the holiday
-              season centered around it.
-            </p>
-          </div>
-        </li>
-        <li class="detail-info">
-          <div class="content-wrap">
-            <div class="content-spot">
-              2:00 pm goladcoast..here we come dept of social services
-            </div>
-            <img
-              class="image"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdcwjqGV8td_KP4YhVfIjcXrBOAILF1ARunW-QQ-5AagjzHZIQ0w"
-              alt="christmas"
-            />
+    <div class="initial-content">
+      {{ content }}
+    </div>
 
-            <p class="content-line">
-              Christmas is an annual festival commemorating the birth of Jesus
-              Christ,[8][9] observed primarily on December 25[4][10][11] as a
-              religious and cultural celebration among billions of people around
-              the world.[2][12][13] A feast central to the Christian liturgical
-              year, it is preceded by the season of Advent or the Nativity Fast
-              and initiates the season of Christmastide, which historically in
-              the West lasts twelve days and culminates on Twelfth Night;[14] in
-              some traditions, Christmastide includes an octave.[15] Christmas
-              Day is a public holiday in many of the world's
-              nations,[16][17][18] is celebrated religiously by a majority of
-              Christians,[19] as well as culturally by many
-              non-Christians,[1][20] and forms an integral part of the holiday
-              season centered around it.
-            </p>
-          </div>
-        </li>
-        <li class="detail-info">
-          <div class="content-wrap">
-            <div class="content-spot">
-              2:00 pm goladcoast..here we come dept of social services
-            </div>
-            <img
-              class="image"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdcwjqGV8td_KP4YhVfIjcXrBOAILF1ARunW-QQ-5AagjzHZIQ0w"
-              alt="christmas"
-            />
+    {% if site.search == true %}
+      <div class="search-content">
+        {% include_cached search/search_form.html %}
+      </div>
+    {% endif %}
 
-            <p class="content-line">
-              Christmas is an annual festival commemorating the birth of Jesus
-              Christ,[8][9] observed primarily on December 25[4][10][11] as a
-              religious and cultural celebration among billions of people around
-              the world.[2][12][13] A feast central to the Christian liturgical
-              year, it is preceded by the season of Advent or the Nativity Fast
-              and initiates the season of Christmastide, which historically in
-              the West lasts twelve days and culminates on Twelfth Night;[14] in
-              some traditions, Christmastide includes an octave.[15] Christmas
-              Day is a public holiday in many of the world's
-              nations,[16][17][18] is celebrated religiously by a majority of
-              Christians,[19] as well as culturally by many
-              non-Christians,[1][20] and forms an integral part of the holiday
-              season centered around it.
-            </p>
-          </div>
-        </li>
-      </ul>
-    </section>
+    <div class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include_cached footer.html %}
+      </footer>
+    </div>
+
+    {% include scripts.html %}
+
   </body>
 </html>
