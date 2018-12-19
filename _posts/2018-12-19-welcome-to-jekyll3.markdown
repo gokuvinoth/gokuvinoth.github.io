@@ -1,8 +1,10 @@
 ---
+title: karthika's edit
+date: 2018-12-19 08:40:17 Z
+categories:
+- jekyll
+- update
 layout: post
-title: "karthika's edit"
-date: 2018-12-19 19:40:17 +1100
-categories: jekyll update
 ---
 
 ## 23 Jul 2018
