@@ -1,6 +1,6 @@
 ---
-title: Welcome to one!
-date: 2018-12-19 08:20:17 Z
+title: Gold Coast Trip!
+date: 2018-07-23 08:20:17 Z
 categories:
 - jekyll
 - update
